@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,482&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+   
+
+}
+.input-cep::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+body{
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: url('../img/2954453.jpg');
+    background-size: cover;
+
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 482;
+    font-style: italic;
+}
+
+.container{
+    background: #FFFFFF;
+    border: 1px solid #000;
+    border-radius: 15px;
+    min-width: 30rem;
+    max-width: 35rem;
+    height: 30rem;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-cep{
+    text-align: center;
+    margin-top: 10px;
+}
+.msg{
+    font-size: .75rem;
+    color: red;
+}
+.container-retorno{
+    width: 90%;
+    border: 1px solid;
+    gap: 3rem;
+    margin: 20px 0;
+}
+
+.retorno{
+    padding: .3rem;
+}
+
+.btn{
+    background-color: #FFFFFF;
+    color: #000;
+
+    padding: .5rem 3rem;
+    border-radius: 15px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+
+    
+}
+
+.btn:hover{ 
+    background-color: #eff0ed;
+    transition: .85s;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .container{
+        margin: 0 15px;
+      
+        min-width: 10rem;
+ 
+        height: 30rem;
+        padding: .5rem;
+    
+   
+    }
+    .container-retorno{
+        width: 90%;
+        border: 1px solid;
+       
+        margin: 20px 0;
+    }
+
+    .btn{
+
+        padding: .3rem 1rem;
+        
+    }
+}

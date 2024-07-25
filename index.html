@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulte o CEP</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="container">
+        <label for="num">Digite aqui o CEP</label>
+        <input type="number" name="num" id="num" class="input-cep" placeholder="00000-000" >
+            <span class="msg">Somente números</span>
+          <section class="container-retorno">
+              <p class="retorno">Localidade:<span id="localidade"></span></p>
+              <p class="retorno">Bairro:<span id="bairro"></span></p>
+              <p class="retorno">CEP:<span id="cep"></span></p>
+              <p class="retorno">UF:<span id="uf"></span></p>
+              <p class="retorno">DDD:<span id="ddd"></span></p>   
+              <p class="retorno">STATUS:<span id="res"> </span></p> 
+          </section>
+
+    
+          <button onclick="consultaCep()" class="btn">
+                <lord-icon
+                    src="https://cdn.lordicon.com/cjhlqtae.json"
+                    trigger="hover"
+                    stroke="bold"
+                    colors="primary:#000000,secondary:#000000"
+                    style="width:25px;height:25px">
+                </lord-icon>CONSULTAR</button>
+    </main>
+
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
